@@ -11,6 +11,10 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+bspc config active_border_color '#0C1115'
+bspc config normal_border_color '#0C1115'
+bspc config focused_border_color '#FFACE4'
+
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
@@ -22,3 +26,6 @@ picom& > /dev/null
 feh --bg-max ~/Pictures/1097504.png
 ibus-daemon -drx
 dunst&
+
+obsidian&
+latte-dock&
